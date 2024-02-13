@@ -28,25 +28,47 @@ export function Search() {
     const storeID = 1;
     var urlLink = `${website}deals?storeID=${storeID}`;
     try {
+      // Verifica se há um titulo de interesse
       if (title != "deals") {
         urlLink += `&title=${title}`;
       }
+      // Verifica se há restrições por preço
       if (lowerPrice > 0) {
         urlLink += `&lowerPrice=${lowerPrice}`;
       }
       if (upperPrice > 0) {
         urlLink += `&upperPrice=${upperPrice}`;
       }
-
+      // // Ordenar por Descontos, Titulo, Preco ou nota no Metacritic
+      // if (sortBy == "Maiores Descontos") {
+      // }
+      // if (sortBy == "Titulo") {
+      //   urlLink += `$sortBy=Title`;
+      // }
+      // if (sortBy == "Preco") {
+      //   urlLink += `$sortBy=Price`;
+      // }
+      // if (sortBy == "Metacritic") {
+      //   urlLink += `$sortBy=Metacritic`;
+      // }
+      // // Crescente ou Decrescente
+      // if (order == "crescente") {
+      //   urlLink += `$desc=0`;
+      // }
+      // if (order == "decrescente") {
+      //   urlLink += `$desc=1`;
+      // }
+      // Faz a requisicao a API
       const response = await fetch(urlLink);
+      // 'converte' pra Json
       const json = await response.json();
+      // Handling empty Json(Busca vazia)
       if (json == "") {
         console.log("É nulo");
         setGames("noGamesFound");
       } else {
         setGames(json);
       }
-      //   console.log(json);
     } catch (error) {
       console.error(error);
     } finally {
@@ -60,7 +82,7 @@ export function Search() {
 
   const redirectSteam = (gameID) => {
     var steamLink = `${steamWebsite}${gameID}`;
-    console.log(steamLink);
+    // console.log(steamLink);
     Linking.openURL(steamLink);
   };
 
@@ -78,6 +100,7 @@ export function Search() {
             style={styles.inputStyle}
             onChangeText={(text) => setInputValue(text)}
             onSubmitEditing={handleSubmit}
+            selectTextOnFocus
           />
         </View>
         <View style={{ flexDirection: "row" }}>
@@ -88,6 +111,8 @@ export function Search() {
               value={minValue}
               style={styles.minMaxStyle}
               onChangeText={(text) => setminValue(text)}
+              onSubmitEditing={handleSubmit}
+              selectTextOnFocus
             />
           </View>
           <View style={styles.maxStyle}>
@@ -97,9 +122,15 @@ export function Search() {
               value={maxValue}
               style={styles.minMaxStyle}
               onChangeText={(text) => setmaxValue(text)}
+              onSubmitEditing={handleSubmit}
+              selectTextOnFocus
             />
           </View>
         </View>
+        {/* <View style={{flexDirection:'row',justifyContent: 'space-around'}}>
+          <Text>Orderby</Text>
+          <Text>Ordem</Text>
+        </View> */}
         <View>
           <Button
             color={"#F6C224"}

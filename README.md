@@ -37,6 +37,12 @@ Used to show the prices, if there is a difference in the discount price and the 
 
 Here it was used to autofill the top of the screen, for some reason, without the headbar the itens invade the space of the top bar of the fone system.
 
+It is the only dependence that has to be included in the project.
+
+```
+npm install @react-navigation/native-stack
+```
+
 - Conexion with the CheapShark API to get the deals searched
 
 It was made with a simple fetch function, utilizng a get method, and returned a .json file that was handled by the function getGames and showed using a FlatList.

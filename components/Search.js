@@ -7,13 +7,15 @@ import {
   ActivityIndicator,
   Button,
   FlatList,
+  TouchableOpacity,
+  Linking,
 } from "react-native";
 
 import styles from "./cardStyles";
 import { GameCard } from "./GameCard";
 
 const website = "https://www.cheapshark.com/api/1.0/";
-
+const steamWebsite = "https://store.steampowered.com/app/";
 
 export function Search() {
   const [isLoading, setLoading] = useState(true);
@@ -54,6 +56,12 @@ export function Search() {
 
   const handleSubmit = () => {
     getGames(inputValue.toString(), minValue, maxValue);
+  };
+
+  const redirectSteam = (gameID) => {
+    var steamLink = `${steamWebsite}${gameID}`;
+    console.log(steamLink);
+    Linking.openURL(steamLink);
   };
 
   useEffect(() => {
@@ -111,14 +119,16 @@ export function Search() {
             data={games}
             keyExtractor={({ id }) => id}
             renderItem={({ item }) => (
-              <GameCard
-                gameID={item.gameID}
-                title={item.title}
-                thumb={item.thumb}
-                metacriticScore={item.metacriticScore}
-                normalPrice={item.normalPrice}
-                salePrice={item.salePrice}
-              />
+              <TouchableOpacity onPress={() => redirectSteam(item.steamAppID)}>
+                <GameCard
+                  gameID={item.gameID}
+                  title={item.title}
+                  thumb={item.thumb}
+                  metacriticScore={item.metacriticScore}
+                  normalPrice={item.normalPrice}
+                  salePrice={item.salePrice}
+                />
+              </TouchableOpacity>
             )}
           />
         )}

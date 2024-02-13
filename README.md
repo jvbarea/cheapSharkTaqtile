@@ -6,20 +6,53 @@ This README describes what was developed during this chalenge, including feature
 ## Functionalities of the System
 
 - Search best Deals
+
+If there is nothing in the InputText the app will return the best deals.
+
 - Search best Deals by Title
 - Search by filtering the lowest price
 - Search by filtering the highest price
 - Redirect the user to the corresponding Steam link that was selected
 
+You can press or click any card of any deal, and it will redirect you to the steam link, if you have the steam app downloaded in you smatphone, it will even open the app of the game.
 ## Features used
 
 - Creation of a customizable card to show the title, the image, the metacritic score, the discount price and the normal price.
+
+Utilizing some cards as references it was created a new design for this project, that can be reutilized in the future
+
 - Styling of new Button, Views, TextInputs
-- Dinamic stylling used to give the metacriticScore different colors based on its value
-- Dinamic text, used to show the prices, if there is a difference in the discount price and the normal price, the card shows both of them, if not just show the normal price
-- Implementation od StackNavigation, here it was used to autofill the top of the screen, for some reason, without the headbar the itens invade the space of the top bar of the fone system.
+
+It was created new design for all the components used in the project that can be reutilized too.
+
+- Dinamic stylling 
+
+Used to give the metacriticScore different colors based on its value
+
+- Dinamic hidden text
+
+Used to show the prices, if there is a difference in the discount price and the normal price, the card shows both of them, if not just show the normal price
+
+- Implementation of StackNavigation
+
+Here it was used to autofill the top of the screen, for some reason, without the headbar the itens invade the space of the top bar of the fone system.
+
 - Conexion with the CheapShark API to get the deals searched
+
+It was made with a simple fetch function, utilizng a get method, and returned a .json file that was handled by the function getGames and showed using a FlatList.
 
 ## Further Improve
 
+### Add orderBy
 
+This is a simple step that could be added to the top of the app and it's very simple and used in all searching websites. It could order by title, price, metacritic score(already possible using just the API), using a drop-down to select posibly .
+
+### Add more details to the cards
+
+It could open a pop-up or a new screen where there is more information about the deal, like the link, the store, the Steam Rating, the Release Data, and other information. 
+
+### Deal Lookup
+
+It can be implemented in the same part as the last topic, maybe shown in this new page, adding this new method, there are some new information about te game that can be shown, like the price in all the stores (in the cheapShark), and show the cheapest one.
+
+### 

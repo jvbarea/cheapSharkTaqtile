@@ -50,6 +50,7 @@ This is a simple step that could be added to the top of the app and it's very si
 ### Add more details to the cards
 
 It could open a pop-up or a new screen where there is more information about the deal, like the link, the store, the Steam Rating, the Release Data, and other information. 
+Showing directly the steamLink isn't ideal, adding this intermediate page would be better.
 
 ### Deal Lookup
 

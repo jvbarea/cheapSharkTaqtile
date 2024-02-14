@@ -4,7 +4,7 @@ This project is a personal solution to the Challenge proposed by Tacqile
 
 This README describes what was developed during this chalenge, including features and functionalities and what can be further improved in the next steps.
 
-## Requiriments
+## Requirements
 
 - Use a FlatList component in Search.js; :white_check_mark:
 
@@ -31,7 +31,7 @@ If there is nothing in the InputText the app will return the best deals.
 
 You can press or click any card of any deal, and it will redirect you to the steam link, if you have the steam app downloaded in you smatphone, it will even open the app of the game.
 
-## Features used
+## Features
 
 - Creation of a customizable card to show the title, the image, the metacritic score, the discount price and the normal price.
 
@@ -59,11 +59,11 @@ It is the only dependence that has to be included in the project.
 npm install @react-navigation/native-stack
 ```
 
-- Conexion with the CheapShark API to get the deals searched
+- Conexion with the CheapShark API to get the searched deals
 
 It was made with a simple fetch function, utilizng a get method, and returned a .json file that was handled by the function getGames and showed using a FlatList.
 
-## Further Improve
+## Further Improvement
 
 ### Add orderBy
 
@@ -72,10 +72,8 @@ This is a simple step that could be added to the top of the app and it's very si
 ### Add more details to the cards
 
 It could open a pop-up or a new screen where there is more information about the deal, like the link, the store, the Steam Rating, the Release Data, and other information.
-Showing directly the steamLink isn't ideal, adding this intermediate page would be better.
+Showing directly the steamLink isn't ideal, adding this intermediate page would be better(using the imported dependence StackNavigation).
 
 ### Deal Lookup
 
 It can be implemented in the same part as the last topic, maybe shown in this new page, adding this new method, there are some new information about te game that can be shown, like the price in all the stores (in the cheapShark), and show the cheapest one.
-
-###

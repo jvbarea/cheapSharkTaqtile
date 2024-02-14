@@ -55,9 +55,8 @@ Here it was used to autofill the top of the screen, for some reason, without the
 
 It is the only dependence that has to be included in the project.
 
-```
-npm install @react-navigation/native-stack
-```
+    npm install @react-navigation/native-stack
+
 
 - Conexion with the CheapShark API to get the searched deals
 

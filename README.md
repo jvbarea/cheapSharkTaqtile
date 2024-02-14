@@ -87,6 +87,8 @@ For some screen proportions there are some problems that appear in the cards. Fo
 
     ----- Image skinny cellphone -----
 
+It didn't work for samsgung galaxy s20 and s9, for all the other all informations are shoun fully.
+ 
 ## Improve the web Browser interface
 
 The app was developed focusing the android and ios interface. There are some corretions nedeed so that the app can be used in browser. Example below:

@@ -1,7 +1,22 @@
 # Project Developed for the TaqTile Intership Challenge - Deals Tracker
+
 This project is a personal solution to the Challenge proposed by Tacqile
 
 This README describes what was developed during this chalenge, including features and functionalities and what can be further improved in the next steps.
+
+## Requiriments
+
+- Use a FlatList component in Search.js; :white_check_mark:
+
+- Implement all styles with styled-components
+
+- Create the searchbar and the list using the provided Figma as reference;
+
+- Use the List of Deals API from CheapSharkAPI to search the deals;
+
+- The searchbar must allow the user to search by name and filter by min and max price;
+
+- The list itens must contain: the game title, an image, the retail price, the discounted price and the metacritic score
 
 ## Functionalities of the System
 
@@ -15,6 +30,7 @@ If there is nothing in the InputText the app will return the best deals.
 - Redirect the user to the corresponding Steam link that was selected
 
 You can press or click any card of any deal, and it will redirect you to the steam link, if you have the steam app downloaded in you smatphone, it will even open the app of the game.
+
 ## Features used
 
 - Creation of a customizable card to show the title, the image, the metacritic score, the discount price and the normal price.
@@ -25,7 +41,7 @@ Utilizing some cards as references it was created a new design for this project,
 
 It was created new design for all the components used in the project that can be reutilized too.
 
-- Dinamic stylling 
+- Dinamic stylling
 
 Used to give the metacriticScore different colors based on its value
 
@@ -55,11 +71,11 @@ This is a simple step that could be added to the top of the app and it's very si
 
 ### Add more details to the cards
 
-It could open a pop-up or a new screen where there is more information about the deal, like the link, the store, the Steam Rating, the Release Data, and other information. 
+It could open a pop-up or a new screen where there is more information about the deal, like the link, the store, the Steam Rating, the Release Data, and other information.
 Showing directly the steamLink isn't ideal, adding this intermediate page would be better.
 
 ### Deal Lookup
 
 It can be implemented in the same part as the last topic, maybe shown in this new page, adding this new method, there are some new information about te game that can be shown, like the price in all the stores (in the cheapShark), and show the cheapest one.
 
-### 
+###

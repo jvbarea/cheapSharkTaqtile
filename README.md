@@ -8,15 +8,15 @@ This README describes what was developed during this chalenge, including feature
 
 - Use a FlatList component in Search.js; :white_check_mark:
 
-- Implement all styles with styled-components
+- Implement all styles with styled-components :white_check_mark:
 
-- Create the searchbar and the list using the provided Figma as reference;
+- Create the searchbar and the list using the provided Figma as reference; :white_check_mark:
 
-- Use the List of Deals API from CheapSharkAPI to search the deals;
+- Use the List of Deals API from CheapSharkAPI to search the deals;:white_check_mark:
 
-- The searchbar must allow the user to search by name and filter by min and max price;
+- The searchbar must allow the user to search by name and filter by min and max price; :white_check_mark:
 
-- The list itens must contain: the game title, an image, the retail price, the discounted price and the metacritic score
+- The list itens must contain: the game title, an image, the retail price, the discounted price and the metacritic score :white_check_mark:
 
 ## Functionalities of the System
 

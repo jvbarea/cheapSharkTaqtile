@@ -63,6 +63,10 @@ npm install @react-navigation/native-stack
 
 It was made with a simple fetch function, utilizng a get method, and returned a .json file that was handled by the function getGames and showed using a FlatList.
 
+## Interface
+
+    ----- Image Infertace -----
+
 ## Further Improvement
 
 ### Add orderBy
@@ -77,3 +81,15 @@ Showing directly the steamLink isn't ideal, adding this intermediate page would 
 ### Deal Lookup
 
 It can be implemented in the same part as the last topic, maybe shown in this new page, adding this new method, there are some new information about te game that can be shown, like the price in all the stores (in the cheapShark), and show the cheapest one.
+
+## Improve the interface
+
+For some screen proportions there are some problems that appear in the cards. For most of the screens tested, there isn't any problem, they show all the necessary informations, but for some of the phones tested using the web browser, the prices aren't shown fully, example below:
+
+    ----- Image skinny cellphone -----
+
+## Improve the web Browser interface
+
+The app was developed focusing the android and ios interface. There are some corretions nedeed so that the app can be used in browser. Example below:
+
+     ----- Image web Browser -----

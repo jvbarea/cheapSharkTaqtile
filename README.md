@@ -10,7 +10,7 @@ This README describes what was developed during this challenge, including featur
 
 - Implement all styles with styled-components :white_check_mark:
 
-- Create the searchbar and the list using the provided Figma as reference; :white_check_mark:
+- Create the search bar and the list using the provided Figma as reference; :white_check_mark:
 (Used as reference)
 
 - Use the List of Deals API from Cheap Shark API to search the deals;:white_check_mark:

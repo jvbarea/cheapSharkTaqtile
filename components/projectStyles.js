@@ -1,12 +1,8 @@
+// StyleSheet used in the Search.js and GameCards.js
+
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  layout: {
-    flex: 1,
-    flexDirection: "column",
-    padding: 4,
-    backgroundColor: "#E0E0E0",
-  },
   list: {
     flex: 1,
     backgroundColor: "#E0E0E0",
@@ -142,6 +138,12 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     color: "red",
+  },
+  layout: {
+    flex: 1,
+    flexDirection: "column",
+    padding: 4,
+    backgroundColor: "#E0E0E0",
   },
 });
 

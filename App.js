@@ -1,3 +1,10 @@
+// ######################################################################################
+// Taqtile Internship Challenge - Deals Tracker
+// This is a project developed by Joao Victor Barea e Silva
+// Please read README.md first for a best explanation of the code
+// See references.txt to see all the references used in the development of the project
+// ######################################################################################
+
 import * as React from "react";
 import { View, StyleSheet } from "react-native";
 import { NavigationContainer, useNavigation } from "@react-navigation/native";

@@ -96,3 +96,7 @@ It didn't work for Samsung Galaxy s20 and s9, for all the others, all the inform
 The app was developed focusing the android and iOS interface. There are some corrections needed so that the app can be used in browser. Example below:
 
 <img src="imagesREADME/webBrowser.png" width=100% >
+
+### References
+
+The references are in references.txt and has all the links used for the development of this project.

@@ -1,0 +1,82 @@
+I started by the basics, I didn't know anything about react, so i found a simple course that explained the basics
+
+1 - Code Academy - Learn React Native
+https://www.codecademy.com/learn/learn-react-native
+
+
+
+After this I started coding, trying to find the solution to the problem and trying to familiarize 
+with the components and the methods that I would need throw this challenge
+
+2 - Getting Started React Native Paper
+https://callstack.github.io/react-native-paper/docs/guides/getting-started/
+
+3 - Networking
+https://reactnative.dev/docs/network?language=javascript
+
+4 - Using the Fetch API
+https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
+5 - React Documentation
+https://react.dev/
+
+6 - Activity Indicator
+https://reactnative.dev/docs/activityindicator
+
+7 - Flat List
+https://reactnative.dev/docs/flatlist?language=javascript
+
+8 - Handling Text Inputs
+https://reactnative.dev/docs/handling-text-input
+
+9 - A Begginer guide to Images in React Native
+https://www.youtube.com/watch?v=txSxteRjpYw
+
+
+
+Than after I made the app work and display all the information needed I started developing the Interface
+
+10 and 11 Used to the Metacritic Score and the Discount Price 
+10 - How to add Dynamic Styles in React
+https://javascript.plainenglish.io/how-to-add-dynamic-styles-in-react-and-react-native-628280320ca4
+11 - Metacritic site
+https://www.metacritic.com/game/
+
+12 - Configuring the headerbar
+https://reactnavigation.org/docs/headers/
+
+Making a custom Card component
+13 - Styling Cards in React Native
+https://www.youtube.com/watch?v=RpBOw56rp1I
+
+
+14 - 15 Add redirect to steam page
+14 - Linking
+https://reactnative.dev/docs/linking?language=javascript
+
+15 - Touchable Opacity
+https://reactnative.dev/docs/touchableopacity
+
+
+
+Refactoring the Code
+
+16 - Como organizar estilos no React Native
+https://blog.rocketseat.com.br/como-organizar-estilos-no-react-native/
+
+17 - View Styles Props
+https://reactnative.dev/docs/view-style-props
+
+18 - A Frienly Way for React Native to Handle number Inputs
+https://weijingjaylin.medium.com/a-friendly-way-for-react-native-to-handle-number-input-d544d0616ce7
+
+19 - How to get TextInput Value in React Native
+https://www.bacancytechnology.com/qanda/react-native/get-textinput-value-in-react-native
+
+20 - A React Native Networking
+https://www.freecodecamp.org/news/react-native-networking-api-requests-using-fetchapi/
+
+
+
+
+

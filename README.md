@@ -65,7 +65,7 @@ It was made with a simple fetch function, utilizing a get method, and returned a
 
 ## Interface
 <p align="middle">
-<img src="imagesREADME/interface1.jpg" width=48% height=50%>|<img src="imagesREADME/interface2.jpg" width=48% height=50%>
+<img src="imagesREADME/interface1.jpg" width=48% height=50%>   <img src="imagesREADME/interface2.jpg" width=48% height=50%>
 </p>
 
 ## Further Improvement

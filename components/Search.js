@@ -11,7 +11,7 @@ import {
   Linking,
 } from "react-native";
 
-import styles from "./cardStyles";
+import styles from "./projectStyles";
 import { GameCard } from "./GameCard";
 
 const website = "https://www.cheapshark.com/api/1.0/";
@@ -39,25 +39,6 @@ export function Search() {
       if (upperPrice > 0) {
         urlLink += `&upperPrice=${upperPrice}`;
       }
-      // // Ordenar por Descontos, Titulo, Preco ou nota no Metacritic
-      // if (sortBy == "Maiores Descontos") {
-      // }
-      // if (sortBy == "Titulo") {
-      //   urlLink += `$sortBy=Title`;
-      // }
-      // if (sortBy == "Preco") {
-      //   urlLink += `$sortBy=Price`;
-      // }
-      // if (sortBy == "Metacritic") {
-      //   urlLink += `$sortBy=Metacritic`;
-      // }
-      // // Crescente ou Decrescente
-      // if (order == "crescente") {
-      //   urlLink += `$desc=0`;
-      // }
-      // if (order == "decrescente") {
-      //   urlLink += `$desc=1`;
-      // }
       // Faz a requisicao a API
       const response = await fetch(urlLink);
       // 'converte' pra Json
@@ -82,7 +63,6 @@ export function Search() {
 
   const redirectSteam = (gameID) => {
     var steamLink = `${steamWebsite}${gameID}`;
-    // console.log(steamLink);
     Linking.openURL(steamLink);
   };
 
@@ -127,10 +107,6 @@ export function Search() {
             />
           </View>
         </View>
-        {/* <View style={{flexDirection:'row',justifyContent: 'space-around'}}>
-          <Text>Orderby</Text>
-          <Text>Ordem</Text>
-        </View> */}
         <View>
           <Button
             color={"#F6C224"}
@@ -148,7 +124,7 @@ export function Search() {
         ) : (
           <FlatList
             data={games}
-            keyExtractor={({ id }) => id}
+            keyExtractor={(item) => item.gameID}
             renderItem={({ item }) => (
               <TouchableOpacity onPress={() => redirectSteam(item.steamAppID)}>
                 <GameCard

@@ -6,7 +6,7 @@ import {
   View,
 } from "react-native";
 
-import styles from "./cardStyles";
+import styles from "./projectStyles";
 
 export function GameCard(props) {
   return (

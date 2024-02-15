@@ -63,8 +63,9 @@ It is the only dependence that has to be included in the project.
 It was made with a simple fetch function, utilizng a get method, and returned a .json file that was handled by the function getGames and showed using a FlatList.
 
 ## Interface
-
-    ----- Image Infertace -----
+<p align="middle">
+<img src="imagesREADME/interface1.jpg" width=48% height=50%>|<img src="imagesREADME/interface2.jpg" width=48% height=50%>
+</p>
 
 ## Further Improvement
 
@@ -85,12 +86,12 @@ It can be implemented in the same part as the last topic, maybe shown in this ne
 
 For some screen proportions there are some problems that appear in the cards. For most of the screens tested, there isn't any problem, they show all the necessary informations, but for some of the phones tested using the web browser, the prices aren't shown fully, example below:
 
-    ----- Image skinny cellphone -----
+<img src="imagesREADME/phoneImprove.png" width=100% height=100%>
 
 It didn't work for samsgung galaxy s20 and s9, for all the others, all the informations are shown fully.
 
 ## Improve the web Browser interface
 
-The app was developed focusing the android and ios interface. There are some corretions nedeed so that the app can be used in browser. Example below:
+The app was developed focusing the android and ios interface. There are some corrections nedeed so that the app can be used in browser. Example below:
 
-     ----- Image web Browser -----
+<img src="imagesREADME/webBrowser.png" width=100% >
